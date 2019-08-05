@@ -1,0 +1,30 @@
+h1{
+    color: palegoldenrod;
+    background-color: aquamarine;
+}
+
+p{
+    color:black;
+}
+
+h2{
+    text-align: center;
+    color: lightgoldenrodyellow;
+}
+
+p{
+    
+    text-align: center;
+}
+
+img{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body{
+    background-image: url("https://miro.medium.com/max/4608/1*UTiUlRqw-jUb3JpoxHo69Q.jpeg");
+}
