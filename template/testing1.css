@@ -1,5 +1,5 @@
 p {
-  font-family: "Lucida Console", Times, serif;
+  font-family: fantasy;
 }
 
 body {
@@ -28,7 +28,7 @@ a:visited {
   position:relative;
   bottom:30px;
   right:150px;
-  height:50px;
+  height:40px;
   width:300px;
   background:maroon;
   text-align:center;
@@ -111,7 +111,7 @@ a:visited {
 }
 
 #multiplayer {
-  height:50px;
+  height:40px;
   width:300px;
   background:maroon;
   position:relative;
@@ -136,11 +136,11 @@ a:visited {
 }
 
 #credits {
-  height:50px;
+  height:40px;
   width:300px;
   position:relative;
   background:Maroon;
-  bottom:-30px;
+  bottom:-60px;
   font-size:30px;
   right:150px;
   text-align:center;
@@ -160,5 +160,25 @@ img{
     height: auto;
     width: auto;
 }
-  
+  #Python {
+  height:40px;
+  width:300px;
+  position:relative;
+  background:Maroon;
+  bottom:-30px;
+  font-size:30px;
+  right:150px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+
 }
+#Python:hover {
+  background:#7A0000;
+  color:white;
+-webkit-transform:rotate(-1deg);
+  transform:rotate(-2deg);
+  
