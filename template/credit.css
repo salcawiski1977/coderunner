@@ -1,0 +1,31 @@
+h1 {
+    color:orange;
+    text-align:center;
+    background-color:maroon 
+}
+
+h3 {
+    color:orange;
+    background-color:maroon
+}
+
+h2 {
+    color:white;
+    
+}
+
+ul { font-family:sans-serif;
+    
+}
+
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    
+    text-align: center;
+    
+}
+p { color:orange; 
+}
