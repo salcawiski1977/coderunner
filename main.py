@@ -34,7 +34,7 @@ class HomeHandler(webapp2.RequestHandler):
         
 class GamesHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/CodeRunnerGame.html')
+        results_template = jinja_current_directory.get_template('template/credit.html')
         self.response.write(results_template.render())
         
 class CreditsHandler(webapp2.RequestHandler):
