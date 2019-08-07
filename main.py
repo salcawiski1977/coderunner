@@ -55,16 +55,11 @@ class JavascriptHandler(webapp2.RequestHandler):
 class CreditsHandler(webapp2.RequestHandler):
     def get(self):
         results_template = jinja_current_directory.get_template('template/menuscreen.html')
-        self.response.write(results_template.render())
-        
-class PythonHandler(webapp2.RequestHandler):
-    def get(self):
-        results_template = jinja_current_directory.get_template('template/Python.html')
-        self.response.write(results_template.render())
+        self.response.write(results_template.render())        
         
 class QuestionsHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/python.html')
+        results_template = jinja_current_directory.get_template('template/Python.html')
         the_variable_dict = {
             "question": "What is the addition operator in Python",
             "answer1": "+",
