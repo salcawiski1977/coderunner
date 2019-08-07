@@ -19,6 +19,20 @@ class python(ndb.Model):
     wrong_answer1 = ndb.StringProperty(required=True)
     wrong_answer2 = ndb.StringProperty(required=True)
 
+class javascript(ndb.Model):
+
+    question = ndb.StringProperty(required=True)
+    right_answer = ndb.StringProperty(required=True)
+    wrong_answer1 = ndb.StringProperty(required=True)
+    wrong_answer2 = ndb.StringProperty(required=True)
+    
+class html(ndb.Model):
+
+    question = ndb.StringProperty(required=True)
+    right_answer = ndb.StringProperty(required=True)
+    wrong_answer1 = ndb.StringProperty(required=True)
+    wrong_answer2 = ndb.StringProperty(required=True)
+
 def get_all_questions():
     #fillings = ['steak', 'carnitas', 'veggie', 'chicken', 'ground beef']
     Questions = python.query().filter().fetch()
@@ -29,13 +43,13 @@ def get_all_questions():
 
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/CodeRunners.html')
+        results_template = jinja_current_directory.get_template('template/Credits.html')
         self.response.write(results_template.render())
         
 class GamesHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/CodeRunnerGame.html')
-        self.response.write(results_template.render())
+        results_template = jinja_current_directory.get_template('template/JavaScript.html')
+        self.response.write(results_template.render(questionsC = get_all_questions()))
         
 class CreditsHandler(webapp2.RequestHandler):
     def get(self):
@@ -49,8 +63,15 @@ class PythonHandler(webapp2.RequestHandler):
         
 class QuestionsHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/Python.html')
-        self.response.write(results_template.render(questionsJ = get_all_questions()))
+        results_template = jinja_current_directory.get_template('template/python.html')
+        the_variable_dict = {
+            "question": "What is the addition operator in Python",
+            "answer1": "+",
+            "answer2": "jsdf",
+            "answer3": "print()"
+        }
+        self.response.write(results_template.render(the_variable_dict))
+        
 #        self.response.write(get_all_questions())
         
 # Route mapping
@@ -58,7 +79,7 @@ app = webapp2.WSGIApplication([
     # This line routes the main url ('/')  - also know as
     # The root route - to the Fortune Handler
     ('/', HomeHandler),
-    ('/Games', GamesHandler),
+    ('/Javascript', JavascriptHandler),
     ('/Credits', CreditsHandler),
     ('/Python', QuestionsHandler),
 ], debug=True)
