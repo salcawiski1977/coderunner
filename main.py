@@ -29,12 +29,12 @@ def get_all_questions():
 
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/CodeRunners.html')
+        results_template = jinja_current_directory.get_template('template/credit.html')
         self.response.write(results_template.render())
         
 class GamesHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/credit.html')
+        results_template = jinja_current_directory.get_template('template/creditgit .html')
         self.response.write(results_template.render())
         
 class CreditsHandler(webapp2.RequestHandler):
