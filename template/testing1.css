@@ -1,0 +1,184 @@
+p {
+  font-family: fantasy;
+}
+
+body {
+  background:orange;
+  
+}
+/* visited link */
+a:visited {
+  color: orange;
+}
+
+#allthethings {
+  width:0px;
+  height:0px;
+  
+  border-left: 300px solid transparent;
+  border-right:300px solid transparent;
+  border-radius: px;
+  margin:auto;
+  top:10px;
+  left:2px; 
+}
+
+#single {
+  
+  position:relative;
+  bottom:30px;
+  right:150px;
+  height:40px;
+  width:300px;
+  background:maroon;
+  text-align:center;
+  font-size:30px;
+ background-size: 1px 300%;
+ -webkit-transition:0.5s;
+  transition:0.5s;
+  color:green;
+  font-family:shadows into light;
+  
+  cursor:pointer;
+  
+  
+  
+}
+
+#single:hover {
+  background:#7A0000;
+  color:white;
+-webkit-transform:rotate(-1deg);
+  transform:rotate(-2deg);
+  
+  
+}
+
+#multiplayer:hover {
+  background:#7A0000;
+  color:white;
+   
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+  
+  
+}
+
+#credits:hover {
+  background:#7A0000;
+  color:white;
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+  
+}
+
+#left {
+  height:100px;
+    width:600px;
+  background:orange;
+  position:absolute;
+  z-index:6;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+  top:-175px;
+  right:-104px;
+  border-top:1px solid white;
+  
+}
+#right {
+  height:100px;
+  width:600px;
+  background:orange;
+  position:absolute;
+  top:-229px;
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  z-index:7;
+  left:-56px;
+  border-top:1px solid white;
+  
+  
+}
+
+
+
+#single p {
+  position:relative;
+  top:2px;
+  right:4px;
+  
+  
+}
+
+#multiplayer {
+  height:40px;
+  width:300px;
+  background:maroon;
+  position:relative;
+  bottom:0px;
+  right:150px;
+  text-align:center;
+  font-size:30px;
+  font-family:shadows into light;
+  color:red;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+  
+   
+  
+}
+#multiplayer p {
+  position:relative;
+  top:0px;
+  right:9px;
+  
+}
+
+#credits {
+  height:40px;
+  width:300px;
+  position:relative;
+  background:Maroon;
+  bottom:-60px;
+  font-size:30px;
+  right:150px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+  
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: auto;
+    height: auto;
+    width: auto;
+}
+  #Python {
+  height:40px;
+  width:300px;
+  position:relative;
+  background:Maroon;
+  bottom:-30px;
+  font-size:30px;
+  right:150px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+
+}
+#Python:hover {
+  background:#7A0000;
+  color:white;
+-webkit-transform:rotate(-1deg);
+  transform:rotate(-2deg);
+  
