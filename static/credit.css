@@ -12,7 +12,7 @@ body{
 }
 
 #showcase{
-  background-image:url('../coding.jpg');
+  background-image:url('../static/coding.jpg');
   background-size:cover;
   background-position:center;
   height:100vh;
