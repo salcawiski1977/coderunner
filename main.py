@@ -43,13 +43,14 @@ def get_all_questions():
 
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/Credits.html')
+        results_template = jinja_current_directory.get_template('template/credit.html')
         self.response.write(results_template.render())
         
 class GamesHandler(webapp2.RequestHandler):
     def get(self):
         results_template = jinja_current_directory.get_template('template/JavaScript.html')
         self.response.write(results_template.render(questionsC = get_all_questions()))
+
         
 class CreditsHandler(webapp2.RequestHandler):
     def get(self):
