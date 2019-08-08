@@ -120,7 +120,7 @@ class HtmlHandler(webapp2.RequestHandler):
         
 class CreditsHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/menuscreen.html')
+        results_template = jinja_current_directory.get_template('template/Credits.html')
         self.response.write(results_template.render())   
         
 # Route mapping
