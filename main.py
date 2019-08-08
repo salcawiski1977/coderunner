@@ -100,7 +100,7 @@ class PythonHandler(webapp2.RequestHandler):
         
 class HtmlHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/HTML.html')
+        results_template = jinja_current_directory.get_template('template/html.html')
         questions = get_html_questions()
         the_variable_dict = {
             "questionA": questions[0].question,
@@ -128,8 +128,8 @@ app = webapp2.WSGIApplication([
     # This line routes the main url ('/')  - also know as
     # The root route - to the Fortune Handler
     ('/', HomeHandler),
-    ('/JavaScript', JavascriptHandler),
+    ('/JavasScript', JavascriptHandler),
     ('/Credits', CreditsHandler),
     ('/Python', PythonHandler),
-    ('/HTML',HtmlHandler)
+    ('/html',HtmlHandler)
 ], debug=True)
