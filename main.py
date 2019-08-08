@@ -131,5 +131,5 @@ app = webapp2.WSGIApplication([
     ('/JavasScript', JavascriptHandler),
     ('/Credits', CreditsHandler),
     ('/Python', PythonHandler),
-    ('/html',HtmlHandler)
+    ('/Html',HtmlHandler)
 ], debug=True)
