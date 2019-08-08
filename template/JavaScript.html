@@ -2,26 +2,43 @@
 <head>
     
     
-  <link rel="stylesheet" href="JavaScript.css">
+  <link rel="stylesheet" href="/static/JavaScript.css">
 
 </head>
 <body>
     <div id="img">      
-        <img src="../images/logo.png" style="height: 300px; width: 400px;"></div>
+        <img src="../static/logo.png" style="height: 300px; width: 400px;"></div>
     
     <div id="Java script"> </div>
     
 <div id="allthethings">
     
-    <p>{{ questionsJ }}</p>
+    <div id="Javascript"><a href="" style="text-decoration: none">Python</a> </div> 
     
-	<div id="single"><a href="https://www.google.com/" style="text-decoration: none">Answer 1</a> </div> 
+	<div id="single"><a href="https://www.google.com/" style="text-decoration: none">{{Questions.wrong_answer1}}</a> </div> 
         
-  <div id="multiplayer"><a href="https://www.google.com/" style="text-decoration: none">Answer 2</a></div>
+  <div id="multiplayer"><a href="https://www.google.com/" style="text-decoration: none">{{Questions.wrong_answer2}}</a></div>
     
-      <div id="Credits"><a href="https://www.google.com/" style="text-decoration: none">Answer 3</a></div>
-    <section id="section-a">
-    <p>In order to check if the pattern matches with the string "test", the statement is? </p>
+    <div id="Credits"><a href="https://www.google.com/" style="text-decoration: none">{{Questions.right_answer}}</a></div>
+    
+ <div id="box1"><a href="https://www.google.com/" style="text-decoration: none">{{Questions.wrong_answer2}}</a></div>
+    
+<div id="box2"><a href="https://www.google.com/" style="text-decoration: none">{{Questions.wrong_answer2}}</a></div>
+    
+ <div id="box3"><a href="https://www.google.com/" style="text-decoration: none">{{Questions.wrong_answer2}}</a></div>
+    
+ <div id="code1"><a href="https://www.google.com/" style="text-decoration: none">{{Questions.wrong_answer2}}</a></div>
+    
+<div id="code2"><a href="https://www.google.com/" style="text-decoration: none">{{Questions.wrong_answer2}}</a></div>
+    
+ <div id="code3"><a href="https://www.google.com/" style="text-decoration: none">{{Questions.wrong_answer2}}</a></div>
+    
+<section id="section-a">
+<p>{{Questions.question}}</p>
+  </section>
+
+<section id="section-b">
+<p>{{Questions.question}}</p>
   </section>
 
 </div>
