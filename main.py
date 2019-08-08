@@ -128,7 +128,7 @@ app = webapp2.WSGIApplication([
     # This line routes the main url ('/')  - also know as
     # The root route - to the Fortune Handler
     ('/', HomeHandler),
-    ('/JavasScript', JavascriptHandler),
+    ('/JavaScript', JavascriptHandler),
     ('/Credits', CreditsHandler),
     ('/Python', PythonHandler),
     ('/Html',HtmlHandler)
