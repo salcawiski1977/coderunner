@@ -42,7 +42,6 @@ def get_all_questions():
     return only_Questions
 
 def get_python_questions():
-    #fillings = ['steak', 'carnitas', 'veggie', 'chicken', 'ground beef']
 #    newQuestion = python(question="test", right_answer="test", wrong_answer1 = "test", wrong_answer2 = "test")
 #    newQuestion.put()
     questions = python.query().fetch()
@@ -69,10 +68,18 @@ class QuestionsHandler(webapp2.RequestHandler):
         results_template = jinja_current_directory.get_template('template/Python.html')
         questions = get_python_questions()
         the_variable_dict = {
-            "question": questions[0].question,
-            "answer1": questions[0].right_answer,
-            "answer2": questions[0].wrong_answer1,
-            "answer3": questions[0].wrong_answer2
+            "questionA": questions[0].question,
+            "answerA1": questions[0].right_answer,
+            "answerA2": questions[0].wrong_answer1,
+            "answerA3": questions[0].wrong_answer2,
+            "questionB": questions[1].question,
+            "answerB1": questions[1].wrong_answer1,
+            "answerB2": questions[1].right_answer,
+            "answerB3": questions[1].wrong_answer2,
+            "questionC": questions[2].question,
+            "answerC1": questions[2].wrong_answer2,
+            "answerC2": questions[2].wrong_answer1,
+            "answerC3": questions[2].right_answer,
         }
         self.response.write(results_template.render(the_variable_dict))
         
