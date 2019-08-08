@@ -26,7 +26,7 @@ a:visited {
 #single {
   
   position:relative;
-  bottom:-350px;
+  bottom:-210px;
   right:-320px;
   height:40px;
   width:390px;
@@ -57,7 +57,7 @@ left: 150
   transform:rotate(-2deg);
 }
 
-#credits:hover {
+#c3:hover {
   background:#7A0000;
   color:white;
   -webkit-transform:rotate(-2deg);
@@ -68,7 +68,6 @@ left: 150
 #box1:hover {
   background:#7A0000;
   color:white;
-   
   -webkit-transform:rotate(-2deg);
   transform:rotate(-2deg);
 }
@@ -76,7 +75,6 @@ left: 150
 #box2:hover {
   background:#7A0000;
   color:white;
-   
   -webkit-transform:rotate(-2deg);
   transform:rotate(-2deg);
 }
@@ -150,7 +148,7 @@ left: 150
   width:390px;
   background:maroon;
   position:relative;
-  bottom:-170px;
+  bottom:-239px;
   right:-320px;
   text-align:center;
   font-size:30px;
@@ -168,7 +166,7 @@ left: 150
 
 #credits {
   height:40px;
-  width:390px;
+  width:30px;
   position:relative;
   background:Maroon;
   bottom:-200px;
@@ -191,62 +189,21 @@ img{
     height: auto;
     width: auto;
 }
-#Java script {
-  height:-0px;
-  width:150px;
+#c3 {
+  height:40px;
+  width:390px;
   position:relative;
   background:Maroon;
-  bottom:-200px;
+  bottom:-271px;
   font-size:30px;
-  right:290px;
+  right:-320px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
    -webkit-transition:0.5s;
   transition:0.5s;
   cursor:pointer;
-  
 }
-  #section-a{
-  padding:20px;
-  background:maroon;
-  color:orange;
-  text-align:center;
-    width: 200;
-    bottom: 150px;
-      position: relative;
-      left: -589;
-      height: 50;
-      top: -323;
-}
-
-  #section-b{
-  padding:20px;
-  background:maroon;
-  color:orange;
-  text-align:center;
-    width: 200;
-    bottom: 150px;
-      position: relative;
-      left: -100;
-      height: 50;
-      top: -413;
-}
-
- #section-c{
-  padding:20px;
-  background:maroon;
-  color:orange;
-  text-align:center;
-    width: 200;
-    bottom: 150px;
-      position: relative;
-      left: 400;
-      height: 50;
-      top: -500;
-}
-
-
 #box1 {
   height:40px;
   width:390px;
@@ -338,3 +295,50 @@ img{
   transition:0.5s;
   cursor:pointer;
 }
+#section-a {
+  height:40px;
+  width:390px;
+  position:relative;
+  background:Maroon;
+  bottom:260px;
+  font-size:30px;
+  right:660px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+}
+
+#section-b {
+  height:40px;
+  width:390px;
+  position:relative;
+  background:Maroon;
+  bottom:330px;
+  font-size:30px;
+  right:170px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+    
+    }
+
+#section-c {
+  height:40px;
+  width:390px;
+  position:relative;
+  background:Maroon;
+  bottom:400px;
+  font-size:30px;
+  right:-323px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
