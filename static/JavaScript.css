@@ -19,17 +19,17 @@ a:visited {
   border-right:300px solid transparent;
   border-radius: px;
   margin:auto;
-  top:10px;
+  top:100px;
   left:2px; 
 }
 
 #single {
   
   position:relative;
-  bottom:-140px;
-  right:150px;
+  bottom:-350px;
+  right:-320px;
   height:40px;
-  width:150px;
+  width:390px;
   background:maroon;
   text-align:center;
   font-size:30px;
@@ -39,11 +39,7 @@ a:visited {
   color:green;
   font-family:shadows into light;
 left: 150
-  
-  cursor:pointer;
-  
-  
-  
+  cursor:pointer; 
 }
 
 #single:hover {
@@ -51,8 +47,6 @@ left: 150
   color:white;
 -webkit-transform:rotate(-1deg);
   transform:rotate(-2deg);
-  
-  
 }
 
 #multiplayer:hover {
@@ -61,8 +55,6 @@ left: 150
    
   -webkit-transform:rotate(-2deg);
   transform:rotate(-2deg);
-  
-  
 }
 
 #credits:hover {
@@ -107,17 +99,15 @@ left: 150
   position:relative;
   top:2px;
   right:4px;
-  
-  
 }
 
 #multiplayer {
   height:40px;
-  width:150px;
+  width:390px;
   background:maroon;
   position:relative;
   bottom:-170px;
-  right:150px;
+  right:-320px;
   text-align:center;
   font-size:30px;
   font-family:shadows into light;
@@ -125,33 +115,29 @@ left: 150
    -webkit-transition:0.5s;
   transition:0.5s;
   cursor:pointer;
-  
-   
-  
 }
 #multiplayer p {
   position:relative;
   top:0px;
   right:9px;
-  
 }
 
 #credits {
   height:40px;
-  width:150px;
+  width:390px;
   position:relative;
   background:Maroon;
   bottom:-200px;
   font-size:30px;
-  right:150px;
+  right:-320px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
    -webkit-transition:0.5s;
   transition:0.5s;
   cursor:pointer;
-  
 }
+
 img{
     display: block;
     margin-left: auto;
@@ -168,7 +154,7 @@ img{
   background:Maroon;
   bottom:-200px;
   font-size:30px;
-  right:150px;
+  right:290px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -185,6 +171,127 @@ img{
     width: 200;
     bottom: 150px;
       position: relative;
-      left: -106;
-      height: 100
+      left: 396;
+      height: 50;
+      top: -323;
+}
+
+  #section-b{
+  padding:20px;
+  background:maroon;
+  color:orange;
+  text-align:center;
+    width: 200;
+    bottom: 150px;
+      position: relative;
+      left: -100;
+      height: 50;
+      top: -413;
+}
+
+ #section-c{
+  padding:20px;
+  background:maroon;
+  color:orange;
+  text-align:center;
+    width: 200;
+    bottom: 150px;
+      position: relative;
+      left: -593;
+      height: 50;
+      top: -500;
+}
+
+
+
+#box1 {
+  height:40px;
+  width:390px;
+  position:relative;
+  background:Maroon;
+  bottom:-90px;
+  font-size:30px;
+  right:170px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+}
+#box2 {
+  height:40px;
+  width:390px;
+  position:relative;
+  background:Maroon;
+  bottom:-120px;
+  font-size:30px;
+  right:170px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+}
+#box3 {
+  height:40px;
+  width:390px;
+  position:relative;
+  background:Maroon;
+  bottom:-150px;
+  font-size:30px;
+  right:170px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+}
+
+#code1 {
+  height:40px;
+  width:390px;
+  position:relative;
+  background:Maroon;
+  bottom:30px;
+  font-size:30px;
+  right:660px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+}
+#code2 {
+  height:40px;
+  width:390px;
+  position:relative;
+  background:Maroon;
+  bottom:0px;
+  font-size:30px;
+  right:660px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+}
+#code3 {
+  height:40px;
+  width:390px;
+  position:relative;
+  background:Maroon;
+  bottom:-30px;
+  font-size:30px;
+  right:660px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
 }
