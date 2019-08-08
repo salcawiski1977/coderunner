@@ -33,18 +33,22 @@ class html(ndb.Model):
     wrong_answer1 = ndb.StringProperty(required=True)
     wrong_answer2 = ndb.StringProperty(required=True)
 
-def get_all_questions():
-    #fillings = ['steak', 'carnitas', 'veggie', 'chicken', 'ground beef']
-    Questions = python.query().filter().fetch()
-    only_Questions = []
-    for Question in Questions:
-        only_Questions.append((Question.right_answer))
-    return only_Questions
-
 def get_python_questions():
 #    newQuestion = python(question="test", right_answer="test", wrong_answer1 = "test", wrong_answer2 = "test")
 #    newQuestion.put()
     questions = python.query().fetch()
+    return questions
+
+def get_html_questions():
+#    newQuestion = python(question="test", right_answer="test", wrong_answer1 = "test", wrong_answer2 = "test")
+#    newQuestion.put()
+    questions = html.query().fetch()
+    return questions
+
+def get_javascript_questions():
+#    newQuestion = python(question="test", right_answer="test", wrong_answer1 = "test", wrong_answer2 = "test")
+#    newQuestion.put()
+    questions = html.query().fetch()
     return questions
 
 class HomeHandler(webapp2.RequestHandler):
@@ -55,15 +59,26 @@ class HomeHandler(webapp2.RequestHandler):
 class JavascriptHandler(webapp2.RequestHandler):
     def get(self):
         results_template = jinja_current_directory.get_template('template/JavaScript.html')
-        self.response.write(results_template.render(questionsC = get_all_questions()))
-
+        questions = get_javascript_questions()
+        the_variable_dict = {
+            "questionA": questions[0].question,
+            "answerA1": questions[0].right_answer,
+            "answerA2": questions[0].wrong_answer1,
+            "answerA3": questions[0].wrong_answer2,
+            "questionB": questions[1].question,
+            "answerB1": questions[1].wrong_answer1,
+            "answerB2": questions[1].right_answer,
+            "answerB3": questions[1].wrong_answer2,
+            "questionC": questions[2].question,
+            "answerC1": questions[2].wrong_answer2,
+            "answerC2": questions[2].wrong_answer1,
+            "answerC3": questions[2].right_answer,
+        }
+    
+        self.response.write(results_template.render(the_variable_dict))
+      
         
-class CreditsHandler(webapp2.RequestHandler):
-    def get(self):
-        results_template = jinja_current_directory.get_template('template/menuscreen.html')
-        self.response.write(results_template.render())        
-        
-class QuestionsHandler(webapp2.RequestHandler):
+class PythonHandler(webapp2.RequestHandler):
     def get(self):
         results_template = jinja_current_directory.get_template('template/Python.html')
         questions = get_python_questions()
@@ -83,7 +98,30 @@ class QuestionsHandler(webapp2.RequestHandler):
         }
         self.response.write(results_template.render(the_variable_dict))
         
-#        self.response.write(get_all_questions())
+class HtmlHandler(webapp2.RequestHandler):
+    def get(self):
+        results_template = jinja_current_directory.get_template('template/HTML.html')
+        questions = get_html_questions()
+        the_variable_dict = {
+            "questionA": questions[0].question,
+            "answerA1": questions[0].right_answer,
+            "answerA2": questions[0].wrong_answer1,
+            "answerA3": questions[0].wrong_answer2,
+            "questionB": questions[1].question,
+            "answerB1": questions[1].wrong_answer1,
+            "answerB2": questions[1].right_answer,
+            "answerB3": questions[1].wrong_answer2,
+            "questionC": questions[2].question,
+            "answerC1": questions[2].wrong_answer2,
+            "answerC2": questions[2].wrong_answer1,
+            "answerC3": questions[2].right_answer,
+        }
+        self.response.write(results_template.render(the_variable_dict))
+        
+class CreditsHandler(webapp2.RequestHandler):
+    def get(self):
+        results_template = jinja_current_directory.get_template('template/menuscreen.html')
+        self.response.write(results_template.render())   
         
 # Route mapping
 app = webapp2.WSGIApplication([
@@ -92,5 +130,6 @@ app = webapp2.WSGIApplication([
     ('/', HomeHandler),
     ('/Javascript', JavascriptHandler),
     ('/Credits', CreditsHandler),
-    ('/Python', QuestionsHandler),
+    ('/Python', PythonHandler),
+    ('/HTML',HtmlHandler)
 ], debug=True)
