@@ -61,7 +61,7 @@ class JavascriptHandler(webapp2.RequestHandler):
         results_template = jinja_current_directory.get_template('template/JavaScript.html')
         questions = get_javascript_questions()
         the_variable_dict = {
-            "questionA": questions[0].question,
+            "questionA": questions[0].questionA,
             "answerA1": questions[0].right_answer,
             "answerA2": questions[0].wrong_answer1,
             "answerA3": questions[0].wrong_answer2,
