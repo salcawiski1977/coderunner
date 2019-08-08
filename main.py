@@ -41,6 +41,13 @@ def get_all_questions():
         only_Questions.append((Question.right_answer))
     return only_Questions
 
+def get_python_questions():
+    #fillings = ['steak', 'carnitas', 'veggie', 'chicken', 'ground beef']
+#    newQuestion = python(question="test", right_answer="test", wrong_answer1 = "test", wrong_answer2 = "test")
+#    newQuestion.put()
+    questions = python.query().fetch()
+    return questions
+
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
         results_template = jinja_current_directory.get_template('template/menuscreen.html')
@@ -60,11 +67,12 @@ class CreditsHandler(webapp2.RequestHandler):
 class QuestionsHandler(webapp2.RequestHandler):
     def get(self):
         results_template = jinja_current_directory.get_template('template/Python.html')
+        questions = get_python_questions()
         the_variable_dict = {
-            "question": "What is the addition operator in Python",
-            "answer1": "+",
-            "answer2": "jsdf",
-            "answer3": "print()"
+            "question": questions[0].question,
+            "answer1": questions[0].right_answer,
+            "answer2": questions[0].wrong_answer1,
+            "answer3": questions[0].wrong_answer2
         }
         self.response.write(results_template.render(the_variable_dict))
         
