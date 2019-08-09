@@ -1,49 +1,67 @@
 <!DOCTYPE html>
+
 <head>
-    
-    
-  <link rel="stylesheet" href="/static/JavaScript.css">
+
+
+  <!-- <link rel="stylesheet" href="/static/JavaScript.css"> -->
+<style>
+  .the-flex-class{
+    display:flex;
+    justify-content: space-around;
+  }
+</style>
 
 </head>
+
 <body>
-    <div id="img">      
-        <img src="static/logo.png" style="height: 300px; width: 400px;"></div>
-    
-    <div id="Java script"> </div>
-    
-<div id="allthethings">
-    
-    <div id="Javascript"><a href="" style="text-decoration: none">Python</a> </div> 
-    
-	<div id="single">{{answerC1}} </div> 
-        
-  <div id="multiplayer">{{answerC2}}</div>
-    
- <div id="c3">{{answerC3}}</div>
-    
- <div id="box1">{{answerB1}}</div>
-    
-<div id="box2">{{answerB2}}</div>
-    
- <div id="box3">{{answerB3}}</div>
-    
- <div id="code1">{{answerA1}}</div>
-    
-<div id="code2">{{answerA2}}</div>
-    
- <div id="code3">{{answerA3}}</div>
-    
-    <section id="section-a">
-<p>{{questionA}}</p>
-  </section>
+  <div id="img">
+    <img src="static/logo.png" style="height: 300px; width: 400px;"></div>
 
-<section id="section-b">
-<p>{{questionB}}</p>
-  </section>
+  <div id="Java script"> </div>
 
-<section id="section-c">
-<p>{{questionC}}</p>
-  </section>
+  <div id="allthethings" class="the-flex-class">
 
-</div>
+    <div>
+      <section id="section-c">
+        <p>{{questionC}}</p>
+      </section>
+
+      <div id="single">{{answerC1}} </div>
+
+      <div id="multiplayer">{{answerC2}}</div>
+
+      <div id="c3">{{answerC3}}</div>
+
+    </div>
+
+    <div>
+      <section id="section-b">
+        <p>{{questionB}}</p>
+      </section>
+
+
+      <div id="box1">{{answerB1}}</div>
+
+      <div id="box2">{{answerB2}}</div>
+
+      <div id="box3">{{answerB3}}</div>
+    </div>
+
+    <div>
+
+      <section id="section-a">
+        <p>{{questionA}}</p>
+      </section>
+
+      <div id="code1">{{answerA1}}</div>
+
+      <div id="code2">{{answerA2}}</div>
+
+      <div id="code3">{{answerA3}}</div>
+
+    </div>
+
+
+
+  </div>
 </body>
