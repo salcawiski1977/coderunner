@@ -12,25 +12,11 @@ a:visited {
 }
 
 #allthethings {
-  width:0px;
-  height:0px;
-  
-  border-left: 300px solid transparent;
-  border-right:300px solid transparent;
-  border-radius: px;
   margin:auto;
-  top:100px;
-  left:2px; 
 }
 
 #single {
-  
-  position:relative;
-  bottom:-210px;
-  right:-320px;
-  height:40px;
-  width:390px;
-  background:maroon;
+background:maroon;
   text-align:center;
   font-size:30px;
  background-size: 1px 300%;
@@ -38,7 +24,6 @@ a:visited {
   transition:0.5s;
   color:green;
   font-family:shadows into light;
-left: 150
   cursor:pointer; 
 }
 
@@ -108,30 +93,19 @@ left: 150
 }
 
 #left {
-  height:100px;
-    width:600px;
   background:orange;
-  position:absolute;
   z-index:6;
   -webkit-transform:rotate(45deg);
   transform:rotate(45deg);
-  top:-175px;
-  right:-104px;
   border-top:1px solid white;
   
 }
 #right {
-  height:100px;
-  width:600px;
   background:orange;
-  position:absolute;
-  top:-229px;
   -webkit-transform:rotate(-45deg);
   transform:rotate(-45deg);
   z-index:7;
-  left:-56px;
   border-top:1px solid white;
-  
   
 }
 
@@ -139,17 +113,11 @@ left: 150
 
 #single p {
   position:relative;
-  top:2px;
-  right:4px;
 }
 
 #multiplayer {
-  height:40px;
-  width:390px;
   background:maroon;
   position:relative;
-  bottom:-239px;
-  right:-320px;
   text-align:center;
   font-size:30px;
   font-family:shadows into light;
@@ -160,18 +128,12 @@ left: 150
 }
 #multiplayer p {
   position:relative;
-  top:0px;
-  right:9px;
 }
 
 #credits {
-  height:40px;
-  width:30px;
   position:relative;
   background:Maroon;
-  bottom:-200px;
   font-size:30px;
-  right:-320px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -190,13 +152,9 @@ img{
     width: auto;
 }
 #c3 {
-  height:40px;
-  width:390px;
   position:relative;
   background:Maroon;
-  bottom:-271px;
   font-size:30px;
-  right:-320px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -205,13 +163,9 @@ img{
   cursor:pointer;
 }
 #box1 {
-  height:40px;
-  width:390px;
   position:relative;
   background:Maroon;
-  bottom:-90px;
   font-size:30px;
-  right:170px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -220,13 +174,9 @@ img{
   cursor:pointer;
 }
 #box2 {
-  height:40px;
-  width:390px;
   position:relative;
   background:Maroon;
-  bottom:-120px;
   font-size:30px;
-  right:170px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -235,13 +185,9 @@ img{
   cursor:pointer;
 }
 #box3 {
-  height:40px;
-  width:390px;
   position:relative;
   background:Maroon;
-  bottom:-150px;
   font-size:30px;
-  right:170px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -251,13 +197,9 @@ img{
 }
 
 #code1 {
-  height:40px;
-  width:390px;
   position:relative;
   background:Maroon;
-  bottom:30px;
   font-size:30px;
-  right:660px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -266,13 +208,9 @@ img{
   cursor:pointer;
 }
 #code2 {
-  height:40px;
-  width:390px;
   position:relative;
   background:Maroon;
-  bottom:0px;
   font-size:30px;
-  right:660px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -281,13 +219,9 @@ img{
   cursor:pointer;
 }
 #code3 {
-  height:40px;
-  width:390px;
   position:relative;
   background:Maroon;
-  bottom:-30px;
   font-size:30px;
-  right:660px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -296,13 +230,9 @@ img{
   cursor:pointer;
 }
 #section-a {
-  height:40px;
-  width:390px;
   position:relative;
   background:Maroon;
-  bottom:260px;
   font-size:30px;
-  right:660px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -312,13 +242,9 @@ img{
 }
 
 #section-b {
-  height:40px;
-  width:390px;
   position:relative;
   background:Maroon;
-  bottom:330px;
   font-size:30px;
-  right:170px;
   text-align:center;
   font-family:shadows into light;
   color:orange;
@@ -329,13 +255,9 @@ img{
     }
 
 #section-c {
-  height:40px;
-  width:390px;
   position:relative;
   background:Maroon;
-  bottom:400px;
   font-size:30px;
-  right:-323px;
   text-align:center;
   font-family:shadows into light;
   color:orange;

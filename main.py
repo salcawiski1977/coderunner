@@ -58,7 +58,7 @@ class HomeHandler(webapp2.RequestHandler):
         
 class JavascriptHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/JavaScript.html')
+        results_template = jinja_current_directory.get_template('template/html.html')
         questions = get_javascript_questions()
         if len(questions) != 0:
             the_variable_dict = {
@@ -95,7 +95,7 @@ class JavascriptHandler(webapp2.RequestHandler):
         
 class PythonHandler(webapp2.RequestHandler):
     def get(self):
-        results_template = jinja_current_directory.get_template('template/Python.html')
+        results_template = jinja_current_directory.get_template('template/html.html')
         questions = get_python_questions()
         if len(questions) != 0: 
             the_variable_dict = {
