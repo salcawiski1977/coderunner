@@ -77,7 +77,7 @@ class JavascriptHandler(webapp2.RequestHandler):
             }
         else:
             the_variable_dict = {
-                "questionA": 'question A test',
+                "questionA": 'Jquestion A test',
                 "answerA1": 'answerA test',
                 "answerA2": 'answerA test',
                 "answerA3": 'answerA test',
@@ -114,7 +114,7 @@ class PythonHandler(webapp2.RequestHandler):
             }
         else:
             the_variable_dict = {
-                "questionA": 'question A test',
+                "questionA": 'Pquestion A test',
                 "answerA1": 'answerA test',
                 "answerA2": 'answerA test',
                 "answerA3": 'answerA test',
@@ -150,7 +150,7 @@ class HtmlHandler(webapp2.RequestHandler):
             }
         else:
             the_variable_dict = {
-                "questionA": 'question A test',
+                "questionA": 'Hquestion A test',
                 "answerA1": 'answerA test',
                 "answerA2": 'answerA test',
                 "answerA3": 'answerA test',
