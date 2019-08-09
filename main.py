@@ -48,7 +48,7 @@ def get_html_questions():
 def get_javascript_questions():
 #    newQuestion = python(question="test", right_answer="test", wrong_answer1 = "test", wrong_answer2 = "test")
 #    newQuestion.put()
-    questions = html.query().fetch()
+    questions = javascript.query().fetch()
     return questions
 
 class HomeHandler(webapp2.RequestHandler):
