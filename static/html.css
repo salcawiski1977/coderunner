@@ -22,7 +22,7 @@ background:maroon;
  background-size: 1px 300%;
  -webkit-transition:0.5s;
   transition:0.5s;
-  color:green;
+  color:orange;
   font-family:shadows into light;
   cursor:pointer; 
 }
@@ -121,7 +121,7 @@ background:maroon;
   text-align:center;
   font-size:30px;
   font-family:shadows into light;
-  color:red;
+  color:orange;
    -webkit-transition:0.5s;
   transition:0.5s;
   cursor:pointer;
@@ -235,7 +235,7 @@ img{
   font-size:30px;
   text-align:center;
   font-family:shadows into light;
-  color:orange;
+  color:#ffca69;
    -webkit-transition:0.5s;
   transition:0.5s;
   cursor:pointer;
@@ -247,7 +247,7 @@ img{
   font-size:30px;
   text-align:center;
   font-family:shadows into light;
-  color:orange;
+  color:#ffca69;
    -webkit-transition:0.5s;
   transition:0.5s;
   cursor:pointer;
@@ -260,7 +260,17 @@ img{
   font-size:30px;
   text-align:center;
   font-family:shadows into light;
-  color:orange;
+  color:#ffca69;
    -webkit-transition:0.5s;
   transition:0.5s;
   cursor:pointer;
+    
+}
+#Java-script{
+    background: Maroon;
+    color: orange;
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
